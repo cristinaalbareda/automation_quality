@@ -1,0 +1,17 @@
+export const elements = {
+    btnMenuSingup: '.shop-menu > .nav > :nth-child(4) > a',
+    inputName: '[data-qa= "signup-name"]',
+    inputEmail: '[data-qa="signup-email"]',
+    btnSingup: '[data-qa="signup-button"]',
+    inputPassword: '[data-qa="password"]',
+    inputFirstName: '[data-qa="first_name"]',
+    inputLastName: '[data-qa="last_name"]',
+    inputCompany: '[data-qa="company"]',
+    inputAddress: '[data-qa="address"]',
+    inputAddress2: '[data-qa="address2"]',
+    inputState: '[data-qa="state"]',
+    inputCity: '[data-qa="city"]',
+    inputZipcode: '[data-qa="zipcode"]',
+    inputMobileNumber: '[data-qa="mobile_number"]',
+    btnCreateAccount: '[data-qa="create-account"]',
+}
