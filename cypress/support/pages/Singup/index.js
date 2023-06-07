@@ -37,23 +37,64 @@ class SingupPage {
     }
 
     typeAddress() {
-        cy.get(elSingupPage.inputAddress).type('Rua Felicidade 123')
+        if (Cypress.env('country') === "BR") {
+            cy.get(elSingupPage.inputAddress).type('Rua Itabera 1409')
+        }
+        else if (Cypress.env('country') === "EN") {
+            cy.get(elSingupPage.inputAddress).type('2220 Steve Hunt Road')
+        }
+        else if (Cypress.env('country') === "AL") {
+            cy.get(elSingupPage.inputAddress).type('Ansbacher Strasse 9')
+        }
+
     }
 
     typeAdsress2() {
-        cy.get(elSingupPage.inputAddress2).type('Rua Maranhão 925')
+        if (Cypress.env('country') === "BR") {
+            cy.get(elSingupPage.inputAddress).type('Rua Nabor Lemos 1571')
+        }
+        else if (Cypress.env('country') === "EN") {
+            cy.get(elSingupPage.inputAddress).type('792 Rinehart Road')
+        }
+        else if (Cypress.env('country') === "AL") {
+            cy.get(elSingupPage.inputAddress).type('An der Schillingbrucke 50')
+        }
     }
 
     typeState() {
-        cy.get(elSingupPage.inputState).type('Santa Catarina')
+        if (Cypress.env('country') === "BR") {
+            cy.get(elSingupPage.inputState).type('São Paulo')
+        }
+        else if (Cypress.env('country') === "EN") {
+            cy.get(elSingupPage.inputState).type('Florida')
+        }
+        else if (Cypress.env('country') === "AL") {
+            cy.get(elSingupPage.inputState).type('Rheinland-Pfalz')
+        }
     }
 
     typeCity() {
-        cy.get(elSingupPage.inputCity).type('Joinville')
+        if (Cypress.env('country') === "BR") {
+            cy.get(elSingupPage.inputCity).type('Avaré')
+        }
+        else if (Cypress.env('country') === "EN") {
+            cy.get(elSingupPage.inputCity).type('Miami')
+        }
+        else if (Cypress.env('country') === "AL") {
+            cy.get(elSingupPage.inputCity).type('Rhaunen')
+        }
     }
 
     typeZipcode() {
-        cy.get(elSingupPage.inputZipcode).type('89200-001')
+        if (Cypress.env('country') === "BR") {
+            cy.get(elSingupPage.inputZipcode).type('18704-130')
+        }
+        else if (Cypress.env('country') === "EN") {
+            cy.get(elSingupPage.inputZipcode).type('33131')
+        }
+        else if (Cypress.env('country') === "AL") {
+            cy.get(elSingupPage.inputZipcode).type('55624')
+        }
     }
 
     typeMobileNumber() {
